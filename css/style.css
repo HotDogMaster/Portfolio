@@ -6,15 +6,14 @@
 #publish .pub_main h1{
     margin: 50px 0;
     font-weight: 900;
-    letter-spacing: -0.3rem;
+    letter-spacing: -0.2rem;
 }
 #publish .pub_main h1 span{
     -webkit-text-stroke: 2px #333;
     color: #fff;
 }
 #publish .pub_main h1:hover span{
-    color: #333;
-    -webkit-text-stroke: 2px #000;
+    
     transition: .3s;
 }
 #publish .pub_main .active span{
@@ -24,7 +23,10 @@
 #publish .pub_cont{
     width: calc((100% - 10px)/2);
 }
-#publish .pc2 img{
+#publish .pc1 h1{
+    cursor: pointer;
+}
+#publish .pc2 video{
     width: 100%;
 }
 #publish .pc2 .pc2_tit{
