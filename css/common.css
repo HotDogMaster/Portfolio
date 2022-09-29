@@ -126,44 +126,53 @@ summary {
   justify-content: space-between;
 }
 h1{
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+}
+h2{
   font-size: 2.625rem;
   line-height: 2.625rem;
 }
 /* 42px */
-h2{
+h3{
   font-size: 2.25rem;
   line-height: 2.25rem;
 }
 /* 36px */
-h3{
+h4{
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
 /* 24px */
-h4{
+h5{
   font-size: 0.875rem;
   line-height: 0.875rem;
 }
 /* 14px */
-h5{
+h6{
   font-size: 0.75rem;
   line-height: 0.75rem;
 }
 /* 12px */
-h6{
-  font-size: 0.625rem;
-  line-height: 0.625rem;
-}
-/* 10px */
 #nav{
   position: fixed;
-  right: 10vw;
+  right: 0;
   top: 2vh;
+  z-index: 10;
 } 
-nav ul li{
+#nav .nav_menu li{
+  padding: 0 10px;
   padding-right: 50px;
   line-height: 50px;
+  background-color: #fff;
+  border-radius: 15px;
 }
+#nav .nav_menu li a{
+  -webkit-text-stroke: .5px #000;
+  color: transparent;
+  font-size: 20px;
+}
+
 #nav .nav_btn{
   cursor: pointer;
 }
@@ -174,4 +183,7 @@ header{
   position: absolute;
   top: 100px;
   right: 30vw;
+}
+body{
+  background-color: #fefefe;
 }
