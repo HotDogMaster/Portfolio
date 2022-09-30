@@ -1,53 +1,73 @@
 $(function(){
 	$(document).scroll(function(){
-		if ($(this).scrollTop() >= $('#sect2').position().top - 800) {
-    		$('#sect2').removeClass('show-animation');
-		    $('#sect2').addClass('show-animation');
-		}
-
-		else{
-			$('#sect2').removeClass('show-animation');
+		if ($(this).scrollTop() >= $('.fpc1').position().top - 800) {
+    		$('.fpc1').removeClass('show-animation');
+		    $('.fpc1').addClass('show-animation');
 		}
 	});
-
 	$(document).scroll(function(){
-		
-		if ($(this).scrollTop() >= $('#sect3').position().top - 800) {
-    		$('#sect3').removeClass('show-animation');
-		    $('#sect3').addClass('show-animation');
-		}
-		else{
-			$('#sect3').removeClass('show-animation');
+		if ($(this).scrollTop() >= $('.hello').position().top - 800) {
+    		$(".hello").css('display','none');
 		}
 	});
 	$(document).scroll(function(){
 		
-		if ($(this).scrollTop() >= $('#sect4').position().top - 800) {
-    		$('#sect4').removeClass('show-animation');
-		    $('#sect4').addClass('show-animation');
-		}
-		else{
-			$('#sect4').removeClass('show-animation');
+		if ($(this).scrollTop() >= $('.fpc2').position().top - 800) {
+    		$('.fpc2').removeClass('show-animation');
+		    $('.fpc2').addClass('show-animation');
 		}
 	});
 	$(document).scroll(function(){
 		
-		if ($(this).scrollTop() >= $('#sect5').position().top - 800) {
-    		$('#sect5').removeClass('show-animation');
-		    $('#sect5').addClass('show-animation');
-		}
-		else{
-			$('#sect5').removeClass('show-animation');
+		if ($(this).scrollTop() >= $('.fpc3').position().top - 800) {
+    		$('.fpc3').removeClass('show-animation');
+		    $('.fpc3').addClass('show-animation');
 		}
 	});
 	$(document).scroll(function(){
 		
-		if ($(this).scrollTop() >= $('#sect6').position().top - 800) {
-    		$('#sect6').removeClass('show-animation');
-		    $('#sect6').addClass('show-animation');
+		if ($(this).scrollTop() >= $('.pc2_des').position().top - 800) {
+    		$('.pc2_des').removeClass('show-animation');
+		    $('.pc2_des').addClass('show-animation');
 		}
-		else{
-			$('#sect6').removeClass('show-animation');
+	});
+	$(document).scroll(function(){
+		
+		if ($(this).scrollTop() >= $('.pc_video video').position().top - 800) {
+    		$('.pc_video video').removeClass('show-animation');
+		    $('.pc_video video').addClass('show-animation');
 		}
+	});
+	$(document).scroll(function(){
+		
+		if ($(this).scrollTop() >= $('.nozin_img').position().top - 800) {
+    		$('.nozin_img').removeClass('show-animation');
+		    $('.nozin_img').addClass('show-animation');
+		}
+	});
+	$(document).scroll(function(){
+		
+		if ($(this).scrollTop() >= $('.nozin_cont').position().top - 900) {
+    		$('.nozin_cont').removeClass('show-animation');
+		    $('.nozin_cont').addClass('show-animation');
+		}
+	});
+	$(document).scroll(function(){
+		
+		if ($(this).scrollTop() >= $('.brand_detail').position().top - 800) {
+    		$('.brand_detail').removeClass('show-animation');
+		    $('.brand_detail').addClass('show-animation');
+		}
+	});
+	// 얘네는 네비로 화면 이동하는거
+	$( '.pubup' ).click( function() {
+		$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+		return false;
+	} );
+	$(".desdw").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#design").offset().top
+		}, 400);
 	});
 })
+
