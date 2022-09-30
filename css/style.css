@@ -6,7 +6,7 @@
 	line-height: 1;
 	margin: 0;
 	text-align: center;
-	color: red;
+    transition: .5s;
 }
 .outline-svg {
 	filter: url(#stroke);
@@ -15,6 +15,9 @@
 	background: linear-gradient(90deg, red, blue);
 	color: transparent;
 	-webkit-background-clip: text;
+}
+.pub_main>h1:hover{
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 #publish h2, #design h2{
     font-weight: 900;
