@@ -36,7 +36,7 @@
 	margin-bottom:250px;
 }
 #publish .pub_main h1 {
-	margin:10px 0;
+	padding-top: 30px;
 	font-weight:900;
 	letter-spacing:-0.2rem;
 }
@@ -48,12 +48,13 @@
 	-webkit-text-stroke:1px #333;
 	transition:.3s;
 }
-#publish .pub_cont {
-	width:calc((100% - 20px)/2);
-}
 #publish .pc1 {
 	text-align:left;
 	margin-left:20px;
+	width: calc(40% - 10px);
+}
+#publish .pc2{
+	width: calc(60% - 10px);
 }
 #publish .pc1 h1 {
 	cursor:pointer;
@@ -82,11 +83,9 @@
 #publish video {
 	width:100%;
 }
-#publish .pc2 .pc2_tit {
+.pc2_tit {
 	padding:0 20px;
-}
-#publish .pub_cont .pc2_des {
-	padding-left:20px;
+	margin-top: 20px;
 }
 #publish .pc2 .pc_video {
 	width:100%;
@@ -97,13 +96,19 @@
 	font-weight:700;
 	margin-bottom:20px;
 	color:#333;
-	border:1px solid #333;
+	border-top:1px solid rgb(235, 235, 235);
+	border-bottom:1px solid rgb(235, 235, 235);
 	padding:10px;
+	text-align: center;
+	margin-top: 10px;
 }
-#publish .pub_cont .pc2_tit h6::before {
+#publish .pub_cont .pc2_tit>.flex{
+	flex-wrap: nowrap;
+}
+#publish .pc1 h1::before {
 	content:"";
 	position:absolute;
-	top:-10px;
+	top: 22px;
 	left:0;
 	width:100%;
 	height:2px;
@@ -165,12 +170,12 @@
 	opacity:0.9;
 }
 .nozin_img{
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 .nozin .nozin_cont {
 	justify-content:space-between;
-    max-width: 1200px;
+    max-width: 900px;
 }
 .nozin .nozin_cont .nozin_des {
 	flex-direction:column;
