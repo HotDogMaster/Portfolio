@@ -14,24 +14,25 @@
     <script src="./js/acodian.js"></script>
     <script src="./js/mrmodal.js"></script>
 </head>
-<svg class="svg-filters" width="0" height="0" viewBox="0 0 0 0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<defs>
-		<filter id="stroke">
-			<feMorphology in="SourceGraphic" operator="erode" radius="1" result="erode" />
-			<feMorphology in="SourceGraphic" operator="dilate" radius="1" result="dilate" />
-			<feComposite in="erode" in2="dilate" operator="xor" />
-		</filter>
-	</defs>
-</svg>
+
 <body>
+    <svg class="svg-filters" width="0" height="0" viewBox="0 0 0 0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="stroke">
+                <feMorphology in="SourceGraphic" operator="erode" radius="1" result="erode" />
+                <feMorphology in="SourceGraphic" operator="dilate" radius="1" result="dilate" />
+                <feComposite in="erode" in2="dilate" operator="xor" />
+            </filter>
+        </defs>
+    </svg>
     <div id="wrap">
         <header>
             <div id="nav" class="inner flex">
                 <nav>
                 <ul class="flex nav_menu">
                     <li class="pubup">
-                        <a href="javascrpit:void(0)" data-text="Publish">
-                            Publish
+                        <a href="javascrpit:void(0)" data-text="Project">
+                            Project
                         </a>
                     </li>
                     <li class="desdw">
@@ -53,13 +54,13 @@
                 <div class="pub_main flex">
                     <div class="pub_cont flex pc2">
                         <div class="pc_video vid1">
-                            <video src="./vid/mitsubishi_intro.mp4" type="mp4" controls muted poster="./img/Mockup_intentr.png"></video>
+                            <video src="./vid/mitsubishi_intro.mp4" controls muted poster="./img/Mockup_intentr.png"></video>
                         </div>
                         <div class="pc_video vid2">
-                            <video src="" type="mp4" controls muted poster="./img/Mockup_intentr.png"></video>
+                            <video src="./vid/mitsubishi_intro.mp4" controls muted poster="./img/Mockup_intentr.png"></video>
                         </div>
                         <div class="pc_video vid3">
-                            <video src="" type="mp4" controls muted poster="./img/Mockup_intentr.png"></video>
+                            <video src="./vid/mitsubishi_intro.mp4" controls muted poster="./img/Mockup_intentr.png"></video>
                         </div>
                         <!-- pc2_des -->
                     </div>
@@ -95,7 +96,7 @@
                                 </div>
                                 <div class="moveto">
                                     <a href="#">상세 페이지</a>
-                                    <a href="#" target="_blank">사이트로 이동</a>
+                                    <a href="https://hotdogmaster.github.io/packagep/" target="_blank">사이트로 이동</a>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +112,6 @@
                                     </h5>
                                 </div>
                                 <div class="moveto">
-                                    <a href="#"> </a>
                                     <a href="https://aahh55.cafe24.com/" target="_blank">사이트로 이동</a>
                                 </div>
                             </div>
@@ -150,21 +150,47 @@
                 </div>
                 <div class="inner banner">
                     <h3>배너 디자인</h3>
-                    <p>배너들을 클릭해서 자세히 알아보세요.</p>
                     <div class="banner_imgs">
                         <div class="banner_items">
-                            <img src="./img/banner_first.png" alt="">
-                            <img src="./img/banners1.png" alt="">
-                            <img src="./img/banners2.png" alt="">
-                            <img src="./img/banner_long.png" alt="">
-                            <img src="./img/banners3.png" alt="">
-                            <img src="./img/banners4.png" alt="">
-                            <img src="./img/banners4.png" alt="">
+                            <img src="./img/banner_first.png" alt="buti 야경투어 배너" class="ban1">
+                            <img src="./img/banners1.png" alt="베토벤 모음전 배너" class="ban2">
+                            <img src="./img/banners2.png" alt="도둑조심 배너" class="ban3">
+                            <img src="./img/banner_long.png" alt="라비앙르로즈 바리에이션 배너" class="ban4">
+                            <img src="./img/banners3.png" alt="에어컨 광고 배너" class="ban5">
+                            <img src="./img/banners4.png" alt="여름맞이 세일 배너" class="ban6">
+                            <img src="./img/banners4.png" alt="다른거 추가 할거임" class="ban7">
+                            <img src="./img/banner_last.png" alt="기다란 할인 배너" class="ban8">
                         </div>
-                        <img src="./img/banner_last.png" alt="">
                     </div>
-                </div>
-            </div>
+                    <div id="banner1" class="banner_modals">
+                        <img src="./img/ban1f1.jpg" alt="buti 야경투어 배너1">
+                        <img src="./img/ban1f2.jpg" alt="buti 야경투어 배너2">
+                    </div>
+                    <div id="banner2" class="banner_modals">
+                        <img src="./img/ban2f.png" alt="베토벤 모음전 배너">
+                    </div>
+                    <div id="banner3" class="banner_modals">
+                        <img src="./img/ban3f.png" alt="도둑조심 배너">
+                    </div>
+                    <div id="banner4" class="banner_modals flex">
+                        <img src="./img/ban4f1.jpg" alt="라비앙르로즈 바리에이션 배너1">
+                        <img src="./img/ban4f2.jpg" alt="라비앙르로즈 바리에이션 배너2">
+                        <img src="./img/ban4f3.jpg" alt="라비앙르로즈 바리에이션 배너3">
+                        <img src="./img/ban4f4.jpg" alt="라비앙르로즈 바리에이션 배너4">
+                        <img src="./img/ban4f5.jpg" alt="라비앙르로즈 바리에이션 배너5">
+                    </div>
+                    <div id="banner5" class="banner_modals">
+                        <img src="./img/ban5f.jpg" alt="에어컨 광고 배너">
+                    </div>
+                    <div id="banner6" class="banner_modals">
+                        <img src="./img/ban6f.jpg" alt="여름맞이 세일 배너">
+                    </div>
+                    <div id="banner7" class="banner_modals">
+                        <img src="./img/" alt="다른거 추가 할거임">
+                    </div>
+                    <div id="banner8" class="banner_modals">
+                        <img src="./img/ban8f.jpg" alt="기다란 할인 배너">
+                    </div>
             <div id="overlay">
                 <img src="./img/brand-gl.png" alt="셀프 브랜딩 상세페이지" class="modal">
             </div>

@@ -61,8 +61,9 @@ $(function(){
 	});
 	// 얘네는 네비로 화면 이동하는거
 	$( '.pubup' ).click( function() {
-		$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
-		return false;
+		$('html, body').animate({
+			scrollTop: $("#publish").offset().top
+		}, 400);
 	} );
 	$(".desdw").click(function() {
 		$('html, body').animate({

@@ -24,6 +24,10 @@
     margin: 100px 0;
     transform: translateX(-30px);
 }
+#publish .pub_main{
+    margin-top: 200px;
+    margin-bottom: 250px;
+}
 #publish .pub_main h1{
     margin: 10px 0;
     font-weight: 900;
@@ -119,6 +123,7 @@
     flex-direction: column;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 #publish .pub_cont .moveto a{
     padding: 10px 10px;
@@ -126,19 +131,24 @@
     color: #000;
     background-color: transparent;
     transition: .3s;
-    overflow: hidden;
+    overflow: hidden;  
 }
 #publish .pub_cont .moveto a::after{
-    content: "";
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
     background-color: #e60000;
-    width: 50px;
-    height: 50px;
-    top: 0;
-    left: 0;
-}
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    transform: scaleX(0);
+    z-index: 100;
+    transition: .3s;
+  }
 #publish .pub_cont .moveto a:hover::after{
-    
-}
+    transform: scaleX(0.3);
+  }
 #design h3{
     letter-spacing: -0.15em;
     font-weight: 700;
@@ -195,7 +205,7 @@
     
 #overlay {width: 100%;
     background-size: cover;
-    background:rgba(0,0,0,0.4);
+    background:rgba(0,0,0,0.8);
     position:fixed;
     top:0;
     left: 0;
@@ -216,4 +226,55 @@
 }
 .banner_imgs{
     max-width: 1200px;
+    cursor: pointer;
+}
+.banner_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:20px;
+    grid-template-areas:'ban1 ban2 ban3 ban4'
+                        'ban5 ban6 ban7 ban4'
+                        'ban8 ban8 ban8 ban8';
+    margin-bottom: 20px;
+}
+.ban1{grid-area: ban1; height: 100%;}
+.ban2{grid-area: ban2; height: 100%;}
+.ban3{grid-area: ban3; height: 100%;}
+.ban4{grid-area: ban4; height: 100%;}
+.ban5{grid-area: ban5; height: 100%;}
+.ban6{grid-area: ban6; height: 100%;}
+.ban7{grid-area: ban7; height: 100%;}
+.ban8{grid-area: ban8; width:  100%;}
+.banner_modals {width: 100%;
+    background-size: cover;
+    background:rgba(0,0,0,0.8);
+    position:fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index:1; 
+    visibility:hidden; 
+    opacity:0;   
+    margin: auto;
+    transition:all 0.5s ease;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+}
+.banner_modals img{
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 500px;
+    transform: translate(-50%, -50%);
+}
+#banner8 img{
+    max-width: 1200px;
+}
+#banner4 img{
+    width: 100%;
+    height: 100%;
 }
