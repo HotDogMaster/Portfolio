@@ -7,7 +7,7 @@ $(function(){
 	});
 	$(document).scroll(function(){
 		if ($(this).scrollTop() >= $('.hello').position().top - 800) {
-    		$(".hello").css('display','none');
+    		$(".hello").fadeOut(5000);
 		}
 	});
 	$(document).scroll(function(){
@@ -40,21 +40,21 @@ $(function(){
 	});
 	$(document).scroll(function(){
 		
-		if ($(this).scrollTop() >= $('.nozin_img').position().top - 800) {
+		if ($(this).scrollTop() >= $('.nozin_img').position().top - 600) {
     		$('.nozin_img').removeClass('show-animation');
 		    $('.nozin_img').addClass('show-animation');
 		}
 	});
 	$(document).scroll(function(){
 		
-		if ($(this).scrollTop() >= $('.nozin_cont').position().top - 900) {
+		if ($(this).scrollTop() >= $('.nozin_cont').position().top - 1200) {
     		$('.nozin_cont').removeClass('show-animation');
 		    $('.nozin_cont').addClass('show-animation');
 		}
 	});
 	$(document).scroll(function(){
 		
-		if ($(this).scrollTop() >= $('.brand_detail').position().top - 800) {
+		if ($(this).scrollTop() >= $('.brand_detail').position().top - 1200) {
     		$('.brand_detail').removeClass('show-animation');
 		    $('.brand_detail').addClass('show-animation');
 		}

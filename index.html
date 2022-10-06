@@ -1,200 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>김태영의 포트폴리오입니다</title>
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/scrolling.css">
-    <script src="./js/jquery-3.1.1.min.js"></script>
-    <script src="./js/jquery-migrate-3.0.0.js"></script>
-    <script src="./js/scrolling.js"></script>
-    <script src="./js/acodian.js"></script>
-    <script src="./js/mrmodal.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>김태영의 포트폴리오입니다</title>
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/scrolling.css">
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/jquery-migrate-3.0.0.js"></script>
+<script src="./js/scrolling.js"></script>
+<script src="./js/acodian.js"></script>
+<script src="./js/mrmodal.js"></script>
 </head>
-
 <body>
-    <svg class="svg-filters" width="0" height="0" viewBox="0 0 0 0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-            <filter id="stroke">
-                <feMorphology in="SourceGraphic" operator="erode" radius="1" result="erode" />
-                <feMorphology in="SourceGraphic" operator="dilate" radius="1" result="dilate" />
-                <feComposite in="erode" in2="dilate" operator="xor" />
-            </filter>
-        </defs>
-    </svg>
-    <div id="wrap">
-        <header>
-            <div id="nav" class="inner flex">
-                <nav>
-                <ul class="flex nav_menu">
-                    <li class="pubup">
-                        <a href="javascrpit:void(0)" data-text="Project">
-                            Project
-                        </a>
-                    </li>
-                    <li class="desdw">
-                        <a href="javascrpit:void(0)" data-text="Design">
-                            Design
-                        </a>
-                    </li>
-                </ul>
-                </nav>
-            </div>
-        </header>
-        <article>
-            
-            <div id="publish" class="inner">
-                <div>
-                    <h1 class="outline-svg gradient hello" data-text="제 포트폴리오에 오신것을 환영합니다">제 포트폴리오에 오신것을 환영합니다</h1>
-                    <h2>Project</h2>
-                </div>
-                <div class="pub_main flex">
-                    <div class="pub_cont flex pc2">
-                        <div class="pc_video vid1">
-                            <video src="./vid/mitsubishi_intro.mp4" controls muted poster="./img/Mockup_intentr.png"></video>
-                        </div>
-                        <div class="pc_video vid2">
-                            <video src="./vid/mitsubishi_intro.mp4" controls muted poster="./img/Mockup_intentr.png"></video>
-                        </div>
-                        <div class="pc_video vid3">
-                            <video src="./vid/mitsubishi_intro.mp4" controls muted poster="./img/Mockup_intentr.png"></video>
-                        </div>
-                        <!-- pc2_des -->
-                    </div>
-                    <div class="pub_cont pc1">
-                        <div class="pc1set">
-                            <h1 class="fpc1 fpc">한국미쓰비시 <span data-text="오토메이션">오토메이션</span></h1>
-                            <div class="pc2_des">
-                                <div class="pc2_tit">
-                                    <h6>반응형홈페이지, 웹디자인설계, 시안제작(피그마/포토샵), 웹퍼블리싱(html/css/jquery/mediaquery) </h6>
-                                    <h5>한국미쓰비시전기 오토메이션의 웹사이트를 리뉴얼했습니다. <br>
-                                        웹사이트를 반응형으로 설계하고 웹표준을 지키며<br>
-                                        가독성과 접근성을 높이는 작업과 배너를 제작했습니다.   
-                                    </h5>
-                                </div>
+<svg class="svg-filters" width="0" height="0" viewbox="0 0 0 0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+<filter id="stroke">
+<femorphology in="SourceGraphic" operator="erode" radius="1" result="erode"/>
+<femorphology in="SourceGraphic" operator="dilate" radius="1" result="dilate"/>
+<fecomposite in="erode" in2="dilate" operator="xor"/>
+</filter>
+</defs>
+</svg>
+<div id="wrap">
+	<header>
+	<div id="nav" class="inner flex">
+		<nav>
+		<ul class="flex nav_menu">
+			<li class="pubup">
+			<a href="javascrpit:void(0)" data-text="Project">
+			Project </a>
+			</li>
+			<li class="desdw">
+			<a href="javascrpit:void(0)" data-text="Design">
+			Design </a>
+			</li>
+		</ul>
+		</nav>
+	</div>
+	<div class="header">
+		<div class="inner-header flex">
+			<h1 class="outline-svg gradient hello" data-text="협업과 고객 중심의 생각을 하는 웹퍼블리셔">협업과 고객 중심의 생각을 하는<span>웹퍼블리셔</span><span>김태영입니다.</span></h1>
+		</div>
+		<div>
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
+			<defs>
+			<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+			</defs>
+			<g class="parallax">
+			<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)"/>
+			<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"/>
+			<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"/>
+			<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"/>
+			</g>
+			</svg>
+		</div>
+		<!--Waves end-->
+	</div>
+	<!--Header ends-->
+	</header>
+	<article>
+	<div id="publish" class="inner">
+		<div>
+			<h2>Project</h2>
+		</div>
+		<div class="pub_main flex">
+			<div class="pub_cont flex pc2">
+				<div class="pc_video vid1">
+					<video src="./vid/mitsubishi_intro.mp4" controls muted poster="./img/Mockup_intentr.png"></video>
+				</div>
+				<div class="pc_video vid2">
+					<video src="./vid/mitsubishi_intro.mp4" controls muted poster="./img/Mockup_intentr.png"></video>
+				</div>
+				<div class="pc_video vid3">
+					<video src="./vid/mitsubishi_intro.mp4" controls muted poster="./img/Mockup_intentr.png"></video>
+				</div>
+				<!-- pc2_des -->
+			</div>
+			<div class="pub_cont pc1">
+				<div class="pc1set">
+					<h1 class="fpc1 fpc">한국미쓰비시 <span data-text="오토메이션">오토메이션</span></h1>
+					<div class="pc2_des">
+						<div class="pc2_tit">
+							<div class="flex">
+								<h5>한국미쓰비시전기 오토메이션의 웹사이트를 리뉴얼했습니다. <br>
+								 웹사이트를 반응형으로 설계하고 웹표준을 지키며<br>
+								 가독성과 접근성을 높이는 작업과 배너를 제작했습니다.
+								
+								</h5>
                                 <div class="moveto">
-                                    <a href="#">상세 페이지</a>
-                                    <a href="https://hotdogmaster.github.io/KMEA/" target="_blank">사이트로 이동</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pc1set">
-                            <h1 class="fpc2 fpc">
-                                배송<span data-text="지키미">지키미</span>
-                            </h1>
-                            <div class="pc2_des">
-                                <div class="pc2_tit">
-                                    <h6>모바일웹, 웹디자인설계, 시안제작(피그마/포토샵), 웹퍼블리싱(html/css/jquery/mediaquery)</h6>
-                                    <h5>
-                                        모바일앱인 배송지키미를 모바일웹 사이트로 리뉴얼했습니다. <br>
-                                        모바일웹에 맞춰 디자인하고 웹표준을 지켜 홈페이지를 제작했습니다.
-
-                                    </h5>
-                                </div>
-                                <div class="moveto">
-                                    <a href="#">상세 페이지</a>
-                                    <a href="https://hotdogmaster.github.io/packagep/" target="_blank">사이트로 이동</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pc1set">
-                        <h1 class="fpc3 fpc">밀키트 <span data-text="파는 남자">파는 남자</span></h1>
-                            <div class="pc2_des">
-                                <div class="pc2_tit">
-                                    <h6>쇼핑몰디자인, 카페24활용, 웹페이지수정(html/css/jquery), 웹이미지제작(상세페이지, 배너)</h6>
-                                    <h5>
-                                        가상의 브랜드인 밀키트 파는 남자 쇼핑몰입니다. <br>
-                                        웹페이지를 간단하게 수정하였으며, <br>
-                                        웹에 들어가는 이미지와 배너를 디자인 했습니다.
-                                    </h5>
-                                </div>
-                                <div class="moveto">
-                                    <a href="https://aahh55.cafe24.com/" target="_blank">사이트로 이동</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- pc2 -->
-                </div>
-            </div>
-            <!-- pubs -->
-        </article>
-        <article>
-            <div id="design">
-                <div class="inner">
-                        <h2>Design</h2>
-                </div>
-                <div class="nozin">
-                    <h3 class="inner">셀프 브랜딩</h3>
-                    <div class="flex nozin_img">
-                        <img src="./img/self_brand_titscr.png" alt="노진">
-                    </div>
-                    <div class="flex inner nozin_cont">
-                        <div class="flex nozin_des">
-                            <h4>NoZin 노진웨어</h4>
-                            <p>셀프 브랜딩으로 컴퓨터의 주변기기인<br>
-                                키보드와 마우스를 중점적으로 만드는 기업을<br>
-                                셀프 브랜딩 하였습니다.
-                            </p>
-                        </div>
-                        <div>
-                            <a href="javascrpit:void(0)" id="myBtn">
-                                자세히 보기
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="inner banner">
-                    <h3>배너 디자인</h3>
-                    <div class="banner_imgs">
-                        <div class="banner_items">
-                            <img src="./img/banner_first.png" alt="buti 야경투어 배너" class="ban1">
-                            <img src="./img/banners1.png" alt="베토벤 모음전 배너" class="ban2">
-                            <img src="./img/banners2.png" alt="도둑조심 배너" class="ban3">
-                            <img src="./img/banner_long.png" alt="라비앙르로즈 바리에이션 배너" class="ban4">
-                            <img src="./img/banners3.png" alt="에어컨 광고 배너" class="ban5">
-                            <img src="./img/banners4.png" alt="여름맞이 세일 배너" class="ban6">
-                            <img src="./img/banners4.png" alt="다른거 추가 할거임" class="ban7">
-                            <img src="./img/banner_last.png" alt="기다란 할인 배너" class="ban8">
-                        </div>
-                    </div>
-                    <div id="banner1" class="banner_modals">
-                        <img src="./img/ban1f1.jpg" alt="buti 야경투어 배너1">
-                        <img src="./img/ban1f2.jpg" alt="buti 야경투어 배너2">
-                    </div>
-                    <div id="banner2" class="banner_modals">
-                        <img src="./img/ban2f.png" alt="베토벤 모음전 배너">
-                    </div>
-                    <div id="banner3" class="banner_modals">
-                        <img src="./img/ban3f.png" alt="도둑조심 배너">
-                    </div>
-                    <div id="banner4" class="banner_modals flex">
-                        <img src="./img/ban4f1.jpg" alt="라비앙르로즈 바리에이션 배너1">
-                        <img src="./img/ban4f2.jpg" alt="라비앙르로즈 바리에이션 배너2">
-                        <img src="./img/ban4f3.jpg" alt="라비앙르로즈 바리에이션 배너3">
-                        <img src="./img/ban4f4.jpg" alt="라비앙르로즈 바리에이션 배너4">
-                        <img src="./img/ban4f5.jpg" alt="라비앙르로즈 바리에이션 배너5">
-                    </div>
-                    <div id="banner5" class="banner_modals">
-                        <img src="./img/ban5f.jpg" alt="에어컨 광고 배너">
-                    </div>
-                    <div id="banner6" class="banner_modals">
-                        <img src="./img/ban6f.jpg" alt="여름맞이 세일 배너">
-                    </div>
-                    <div id="banner7" class="banner_modals">
-                        <img src="./img/" alt="다른거 추가 할거임">
-                    </div>
-                    <div id="banner8" class="banner_modals">
-                        <img src="./img/ban8f.jpg" alt="기다란 할인 배너">
-                    </div>
-            <div id="overlay">
-                <img src="./img/brand-gl.png" alt="셀프 브랜딩 상세페이지" class="modal">
-            </div>
-        </article>
-    </div>
-</body>
-</html>
+									<a href="#">상세 페이지</a>
+									<a href="https://hotdogmaster.github.io/KMEA/" target="_blank">사이트로 이동</a>
+								</div>
+							</div>
+							<h6>반응형홈페이지, 웹디자인설계, 시안제작(피그마/포토샵), 웹퍼블리싱(html/css/jquery/mediaquery) </h6>
+						</div>
+					</div>
+				</div>
+				<div class="pc1set">
+					<h1 class="fpc2 fpc">
+					배송<span data-text="지키미">지키미</span>
+					</h1>
+					<div class="pc2_des">
+						<div class="pc2_tit">
+							<div class="flex">
+								<h5>
+								모바일앱인 배송지키미를 모바일웹 사이트로 리뉴얼했습니다. <br>
+								 모바일웹에 맞춰 디자인하고<br>
+								 웹표준을 지켜 홈페이지를 제작했습니다. </h5>
+								<div class="moveto">
+									<a href="#">상세 페이지</a>
+									<a href="https://hotdogmaster.github.io/packagep/" target="_blank">사이트로 이동</a>
+								</div>
+							</div>
+							<h6>모바일웹, 웹디자인설계, 시안제작(피그마/포토샵), 웹퍼블리싱(html/css/jquery/mediaquery)</h6>
+						</div>
+					</div>
+				</div>
+				<div class="pc1set">
+					<h1 class="fpc3 fpc">밀키트 <span data-text="파는 남자">파는 남자</span></h1>
+					<div class="pc2_des">
+						<div class="pc2_tit">
+							<div class="flex">
+								<h5>
+								가상의 브랜드인 밀키트 파는 남자 쇼핑몰입니다. <br>
+								 카페24를 이용하여 웹페이지를 꾸미고 <br>
+								 웹에 들어가는 이미지와 배너를 디자인 했습니다. </h5>
+								<div class="moveto">
+									<a href="#">상세 페이지</a>
+									<a href="https://aahh55.cafe24.com/" target="_blank">사이트로 이동</a>
+								</div>
+							</div>
+							<h6>쇼핑몰디자인, 카페24활용, 웹페이지수정(html/css/jquery), 웹이미지제작(상세페이지, 배너)</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- pc2 -->
+		</div>
+	</div>
+	<!-- pubs -->
+	</article>
+	<article>
+	<div id="design">
+		<div class="inner">
+			<h2>Design</h2>
+		</div>
+		<div class="nozin">
+			<h3 class="inner">셀프 브랜딩</h3>
+			<div class="flex nozin_img">
+				<img src="./img/self_brand_titscr.png" alt="노진">
+			</div>
+			<div class="flex inner nozin_cont">
+				<div class="flex nozin_des">
+					<h4>NoZin 노진웨어</h4>
+					<p>
+						셀프 브랜딩으로 컴퓨터의 주변기기인<br>
+						 키보드와 마우스를 중점적으로 만드는 기업을<br>
+						 셀프 브랜딩 하였습니다.
+					</p>
+				</div>
+				<div>
+					<a href="javascrpit:void(0)" id="myBtn">
+					자세히 보기 </a>
+				</div>
+			</div>
+		</div>
+		<div class="inner banner">
+			<h3>배너 디자인</h3>
+			<div class="banner_imgs">
+				<div class="banner_items">
+					<img src="./img/banner_first.png" alt="buti 야경투어 배너" class="ban1">
+					<img src="./img/banners1.png" alt="베토벤 모음전 배너" class="ban2">
+					<img src="./img/banners2.png" alt="도둑조심 배너" class="ban3">
+					<img src="./img/banner_long.png" alt="라비앙르로즈 바리에이션 배너" class="ban4">
+					<img src="./img/banners3.png" alt="에어컨 광고 배너" class="ban5">
+					<img src="./img/banners4.png" alt="여름맞이 세일 배너" class="ban6">
+					<img src="./img/banners4.png" alt="다른거 추가 할거임" class="ban7">
+					<img src="./img/banner_last.png" alt="기다란 할인 배너" class="ban8">
+				</div>
+			</div>
+			<div id="banner1" class="banner_modals">
+				<img src="./img/ban1f1.jpg" alt="buti 야경투어 배너1">
+				<img src="./img/ban1f2.jpg" alt="buti 야경투어 배너2">
+			</div>
+			<div id="banner2" class="banner_modals">
+				<img src="./img/ban2f.png" alt="베토벤 모음전 배너">
+			</div>
+			<div id="banner3" class="banner_modals">
+				<img src="./img/ban3f.png" alt="도둑조심 배너">
+			</div>
+			<div id="banner4" class="banner_modals">
+				<img src="./img/ban4f1.jpg" alt="라비앙르로즈 바리에이션 배너1">
+				<img src="./img/ban4f2.jpg" alt="라비앙르로즈 바리에이션 배너2">
+				<img src="./img/ban4f3.jpg" alt="라비앙르로즈 바리에이션 배너3">
+				<img src="./img/ban4f4.jpg" alt="라비앙르로즈 바리에이션 배너4">
+				<img src="./img/ban4f5.jpg" alt="라비앙르로즈 바리에이션 배너5">
+			</div>
+			<div id="banner5" class="banner_modals">
+				<img src="./img/ban5f.jpg" alt="에어컨 광고 배너">
+			</div>
+			<div id="banner6" class="banner_modals">
+				<img src="./img/ban6f.jpg" alt="여름맞이 세일 배너">
+			</div>
+			<div id="banner7" class="banner_modals">
+				<img src="./img/" alt="다른거 추가 할거임">
+			</div>
+			<div id="banner8" class="banner_modals">
+				<img src="./img/ban8f.jpg" alt="기다란 할인 배너">
+			</div>
+			<div id="overlay">
+				<img src="./img/brand-gl.png" alt="셀프 브랜딩 상세페이지" class="modal">
+			</div>
+			</article>
+		</div>
+		</body>
+		</html>
