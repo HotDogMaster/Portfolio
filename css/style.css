@@ -95,11 +95,10 @@
 	position:relative;
 	font-weight:700;
 	margin-bottom:20px;
-	color:#333;
+	color:#666;
 	border-top:1px solid rgb(235, 235, 235);
 	border-bottom:1px solid rgb(235, 235, 235);
-	padding:10px;
-	text-align: center;
+	padding: 10px 0;
 	margin-top: 10px;
 }
 #publish .pub_cont .pc2_tit>.flex{
@@ -108,7 +107,7 @@
 #publish .pc1 h1::before {
 	content:"";
 	position:absolute;
-	top: 22px;
+	top: 17px;
 	left:0;
 	width:100%;
 	height:2px;
@@ -118,6 +117,7 @@
 	line-height:1.35em;
 	letter-spacing:0.015rem;
 	margin-top:20px;
+	color: #777;
 }
 #publish .pub_cont .moveto {
 	flex-direction:column;
@@ -128,15 +128,30 @@
 	display:inline-block;
 	padding:10px 10px;
 	margin-bottom:10px;
-	color:#333;
+	color:#666;
 	background-color:transparent;
 	transition:.3s;
 	overflow:hidden;
 	text-align:left;
+	position: relative;
+}
+#publish .pub_cont .moveto a::before {
+	content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+    background-color: #eee;
+    transition: .3s;
 }
 #publish .pub_cont .moveto a::after {
 	content:'';
 	display:block;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
 	width:100%;
 	height:3px;
 	background-color:#e60000;
@@ -184,15 +199,16 @@
 	font-size:14px;
 }
 .nozin .nozin_cont .nozin_des h4,.nozin .nozin_cont .nozin_des p {
-	color:#fff;
+	color: #ccc;
 }
-.nozin .nozin_cont .nozin_des h4 {
+.nozin .nozin_cont .nozin_des h1 {
 	margin-bottom:20px;
+	color: #fff;
 }
 .nozin .nozin_cont a {
 	display:block;
 	padding:10px 20px;
-	background-color:#fff;
+	color: #fff;
 }
 .nozin .nozin_cont a:hover {
 	background-color:transparent;
