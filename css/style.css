@@ -35,17 +35,20 @@
 	margin-top:200px;
 	margin-bottom:250px;
 }
-#publish .pub_main h1 {
+#publish .pub_main .fpc {
+	color: #222;
 	padding-top: 30px;
 	font-weight:900;
 	letter-spacing:-0.2rem;
+	font-size: 2rem;
+	line-height: 2rem;
 }
-#publish .pub_main h1 span {
-	-webkit-text-stroke:1px #999;
+#publish .pub_main .fpc span {
+	-webkit-text-stroke:1px #222;
 	color:#fff;
 }
-#publish .pub_main h1:hover span {
-	-webkit-text-stroke:1px #333;
+#publish .pub_main .fpc:hover span {
+	-webkit-text-stroke:1px #222;
 	transition:.3s;
 }
 #publish .pc1 {
@@ -56,28 +59,28 @@
 #publish .pc2{
 	width: calc(60% - 10px);
 }
-#publish .pc1 h1 {
+#publish .pc1 .fpc {
 	cursor:pointer;
 	font-weight:900;
 }
-.pub_main .pc1 h1 span {
+.pub_main .pc1 .fpc span {
 	position:relative;
 	margin:0;
 	padding:0;
 }
-.pub_main .pc1 h1 span::before {
+.pub_main .pc1 .fpc span::before {
 	content:attr(data-text);
 	position:absolute;
 	top:0;
 	left:0;
 	width:0;
-	color:#333;
+	color:#222;
 	white-space:nowrap;
 	transition:.5s;
 	overflow:hidden;
-	transform:translateY(3.1px);
+	transform:translateY(7.8px);
 }
-.pub_main .pc1 h1:hover span::before {
+.pub_main .pc1 .fpc:hover span::before {
 	width:100%;
 }
 #publish video {
@@ -104,7 +107,7 @@
 #publish .pub_cont .pc2_tit>.flex{
 	flex-wrap: nowrap;
 }
-#publish .pc1 h1::before {
+#publish .pc1 .fpc::before {
 	content:"";
 	position:absolute;
 	top: 17px;
@@ -162,7 +165,7 @@
 #publish .pub_cont .moveto a:hover::after {
 	transform:scaleX(1);
 }
-#design h3 {
+#design h3, .banner h3 {
 	letter-spacing:-0.15em;
 	font-weight:700;
 	margin-bottom:100px;
@@ -198,22 +201,47 @@
 .nozin .nozin_cont .nozin_des p {
 	font-size:14px;
 }
-.nozin .nozin_cont .nozin_des h4,.nozin .nozin_cont .nozin_des p {
-	color: #ccc;
-}
-.nozin .nozin_cont .nozin_des h1 {
+.nozin .nozin_cont .nozin_des>h4{
+	font-size: 1.75rem;
+	line-height: 1.75rem;
 	margin-bottom:20px;
 	color: #fff;
 }
+.nozin .nozin_cont .nozin_des h4,.nozin .nozin_cont .nozin_des p {
+	color: #ccc;
+}
 .nozin .nozin_cont a {
+	position: relative;
 	display:block;
 	padding:10px 20px;
 	color: #fff;
 }
-.nozin .nozin_cont a:hover {
-	background-color:transparent;
-	color:#fff;
+.nozin .nozin_cont #myBtn::before{
+	content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+    background-color: #333;
+    transition: .3s;
+}
+.nozin .nozin_cont #myBtn::after{
+	content:'';
+	display:block;
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	width:100%;
+	height:3px;
+	background-color:#e60000;
+	transform:scaleX(0);
+	z-index:100;
 	transition:.3s;
+}
+.nozin .nozin_cont #myBtn:hover::after{
+	transform:scaleX(1);
 }
 .modal {
 	width:50%;
@@ -304,8 +332,25 @@
 	overflow-y:auto;
 	-ms-overflow-style:none;
 }
-.banner_modals:not(#banner4) img {
+#banner1 div{
+	display: flex;
+	width: 50vw;
+	height: 50vh;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+.banner_modals:not(#banner1, #banner4) img {
 	max-width:600px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:100%;
+	transform:translate(-50%,-50%);
+}
+#banner4 img{
+	max-width: 900px;
 	position:absolute;
 	top:50%;
 	left:50%;

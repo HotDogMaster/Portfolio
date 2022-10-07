@@ -52,13 +52,6 @@ $(function(){
 		    $('.nozin_cont').addClass('show-animation');
 		}
 	});
-	$(document).scroll(function(){
-		
-		if ($(this).scrollTop() >= $('.brand_detail').position().top - 1200) {
-    		$('.brand_detail').removeClass('show-animation');
-		    $('.brand_detail').addClass('show-animation');
-		}
-	});
 	// 얘네는 네비로 화면 이동하는거
 	$( '.pubup' ).click( function() {
 		$('html, body').animate({
