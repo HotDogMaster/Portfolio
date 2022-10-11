@@ -226,6 +226,7 @@ article {
 	white-space:nowrap;
 	transition:.5s;
 	overflow:hidden;
+	height: 32px;
 }
 .pubup a:hover::before,.desdw a:hover::before {
 	width:100%;
