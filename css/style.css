@@ -251,42 +251,37 @@
 .banner_items {
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr 1fr;
-	grid-template-rows:1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 100%;
 	gap:20px;
 	grid-template-areas:'ban1 ban2 ban3 ban4' 'ban5 ban6 ban7 ban4' 'ban8 ban8 ban8 ban8';
 	margin-bottom:20px;
 }
+.ban1, .ban2, .ban3, .ban4, .ban5, .ban5, .ban6, .ban7, .ban8{
+	width: 100%;
+}
 .ban1 {
 	grid-area:ban1;
-	height:100%;
 }
 .ban2 {
 	grid-area:ban2;
-	height:100%;
 }
 .ban3 {
 	grid-area:ban3;
-	height:100%;
 }
 .ban4 {
 	grid-area:ban4;
-	height:100%;
 }
 .ban5 {
 	grid-area:ban5;
-	height:100%;
 }
 .ban6 {
 	grid-area:ban6;
-	height:100%;
 }
 .ban7 {
 	grid-area:ban7;
-	height:100%;
 }
 .ban8 {
 	grid-area:ban8;
-	width:100%;
 }
 .banner_modals {
 	width:100%;
@@ -307,7 +302,6 @@
 }
 #banner1 div{
 	display: flex;
-	width: 50vw;
 	height: 50vh;
 	position: fixed;
 	top: 50%;
@@ -346,7 +340,7 @@
 	vertical-align:middle;
 }
 .inner-header {
-	height:400px;
+	height:600px;
 	width:100%;
 	margin:0;
 	padding: 0;
@@ -362,7 +356,6 @@
 	width:100%;
 	height:15vh;
 	margin-bottom:-7px;
-	/*Fix for safari gap*/
 	min-height:100px;
 	max-height:150px;
 }
@@ -378,5 +371,83 @@
 	}
 	100% {
 		transform:translate3d(85px,0,0);
+	}
+}
+
+@media all and (max-width:768px) {
+	.hello {
+		font-size: 3em;
+		padding-top: 50px;
+	}
+	.hello span {
+		display: block;
+		margin-top: 20px;
+	}
+	.inner {
+		padding: 0 10px;
+	}
+	.inner-header {
+		height: 350px;
+	}
+	#banner1 div{
+		flex-direction: column;
+		width: 50%;
+		top: 10%;
+    	transform: translate(-50%, 0);
+	}
+	#banner1 div img{
+		max-height: 600px;
+	}
+	#publish .pub_main {
+		margin-top: 0;
+		margin-bottom: 80px;
+		flex-direction: column;
+	}
+	#publish .pc1, #publish .pc2{
+		margin: 0 auto;
+		width: 100%;
+	}
+	.modal {
+		width: 80%;
+	}
+	.banner_items {
+		gap: 5px;
+	}
+}
+@media all and (max-width:671px) {
+	#nav .nav_menu li {
+		margin-right: 15px;
+		transform: translateY(15px);
+	}
+	#nav .nav_menu li a {
+		font-size: 16px;
+	}
+	.hello {
+		font-size: 2em;
+		padding-top: 50px;
+	}
+	.banner_items {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas:
+			'ban1 ban2 ban4'
+			'ban3 ban5 ban4'
+			'ban6 ban7 ban4'
+			'ban8 ban8 ban8';
+	}
+}
+@media all and (max-width:425px) {
+	#banner1 div {
+		width: 70%;
+	}
+	.banner_items {
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'ban1 ban4'
+			'ban2 ban4'
+			'ban3 ban5'
+			'ban6 ban7'
+			'ban8 ban8';
 	}
 }
