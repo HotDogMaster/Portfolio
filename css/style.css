@@ -320,13 +320,6 @@
 	width:100%;
 	transform:translate(-50%,-50%);
 }
-/* #banner4 img{
-	margin: 500px auto;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-} */
 #banner8.banner_modals img {
 	max-width:1200px;
 }
@@ -393,6 +386,15 @@
 	.inner-header {
 		height: 350px;
 	}
+	#publish h2, #design h2 {
+		margin: 50px 0;
+		transform: translateX(0);
+		font-size: 2.3rem;
+		line-height: 2.3rem;
+	}
+	#publish .pub_main .fpc {
+		font-size: 1.6rem;
+	}
 	#banner1 div{
 		flex-direction: column;
 		width: 50%;
@@ -417,6 +419,14 @@
 	.banner_items {
 		gap: 5px;
 	}
+	#design h3, .banner h3 {
+		letter-spacing: -0.01em;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	.banner {
+		margin: 100px auto;
+	}
 }
 @media all and (max-width:671px) {
 	#nav .nav_menu li {
@@ -425,6 +435,9 @@
 	}
 	#nav .nav_menu li a {
 		font-size: 16px;
+	}
+	.pubup a::before, .desdw a::before {
+		top: 3px;
 	}
 	.hello {
 		font-size: 2em;
@@ -441,15 +454,6 @@
 	}
 }
 @media all and (max-width:425px) {
-	#publish h2, #design h2 {
-		margin: 50px 0;
-		transform: translateX(0);
-		font-size: 2.3rem;
-		line-height: 2.3rem;
-	}
-	#publish .pub_main .fpc {
-		font-size: 1.6rem;
-	}
 	#banner1 div {
 		width: 70%;
 	}
