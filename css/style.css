@@ -41,6 +41,10 @@
 #publish .pc2{
 	width: calc(60% - 10px);
 }
+#publish .pc2_tit p{
+	display: block;
+	margin-bottom: 20px;
+}
 #publish .pc1 .fpc {
 	cursor:pointer;
 	font-weight:900;
@@ -146,7 +150,7 @@
 	background-image:url(../img/nozin_intro.png);
 	background-size:cover;
 	background-repeat:no-repeat;
-	padding-bottom:100px;
+	padding-bottom:50px;
 }
 .nozin h3 {
 	padding-top:50px;
@@ -316,13 +320,13 @@
 	width:100%;
 	transform:translate(-50%,-50%);
 }
-#banner4 img{
+/* #banner4 img{
 	margin: 500px auto;
 	position:absolute;
 	top:50%;
 	left:50%;
 	transform:translate(-50%,-50%);
-}
+} */
 #banner8.banner_modals img {
 	max-width:1200px;
 }
@@ -437,6 +441,15 @@
 	}
 }
 @media all and (max-width:425px) {
+	#publish h2, #design h2 {
+		margin: 50px 0;
+		transform: translateX(0);
+		font-size: 2.3rem;
+		line-height: 2.3rem;
+	}
+	#publish .pub_main .fpc {
+		font-size: 1.6rem;
+	}
 	#banner1 div {
 		width: 70%;
 	}
