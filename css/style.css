@@ -12,6 +12,74 @@
 	display:block;
 	margin-top:50px;
 }
+#nav {
+	position:fixed;
+	right:0;
+	top:2vh;
+	z-index:10;
+}
+#nav .nav_menu li {
+	margin-right:50px;
+	transform:translateY(15px);
+}
+#nav .nav_menu li a {
+	-webkit-text-stroke:1px #e60000;
+	color:transparent;
+	font-size:24px;
+}
+.pubup a,.desdw a {
+	position:relative;
+	margin:0;
+	padding:0;
+}
+.pubup a::before,.desdw a::before {
+	content:attr(data-text);
+	position:absolute;
+	top:9px;
+	left:0;
+	width:0;
+	color:#e60000;
+	white-space:nowrap;
+	transition:.5s;
+	overflow:hidden;
+	height: 32px;
+}
+.pubup a:hover::before,.desdw a:hover::before {
+	width:100%;
+}
+.pubup a:active::before,.desdw a:active::before {
+	text-shadow:0 1px 8px #e60000;
+	top:10px;
+	transition:.1s;
+}
+#nav .nav_btn {
+	cursor:pointer;
+}
+.tit_word {
+	position:absolute;
+	top:100px;
+	right: 30vw;
+}
+/* Animation */
+.parallax>use {
+	animation:move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax>use:nth-child(1) {
+	animation-delay:-2s;
+	animation-duration:7s;
+}
+.parallax>use:nth-child(2) {
+	animation-delay:-3s;
+	animation-duration:10s;
+}
+.parallax>use:nth-child(3) {
+	animation-delay:-4s;
+	animation-duration:13s;
+}
+.parallax>use:nth-child(4) {
+	animation-delay:-5s;
+	animation-duration: 20s;
+}
 #publish h2,#design h2 {
 	font-weight:900;
 	margin:100px 0;
@@ -48,6 +116,7 @@
 #publish .pc1 .fpc {
 	cursor:pointer;
 	font-weight:900;
+	user-select: none;
 }
 .pub_main .pc1 .fpc span {
 	position:relative;
@@ -385,6 +454,9 @@
 	}
 	.inner-header {
 		height: 350px;
+	}	
+	.pubup a:active::before,.desdw a:active::before {
+		top:2px;
 	}
 	#publish h2, #design h2 {
 		margin: 50px 0;
@@ -436,8 +508,11 @@
 	#nav .nav_menu li a {
 		font-size: 16px;
 	}
+	#nav .nav_menu li a:active{
+		transform: none;
+	}
 	.pubup a::before, .desdw a::before {
-		top: 3px;
+		top: 2px;
 	}
 	.hello {
 		font-size: 2em;
