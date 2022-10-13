@@ -166,6 +166,22 @@
 	margin-bottom:20px;
 	color: #777;
 }
+#publish .pub_cont div p{
+	position: relative;
+}
+#publish .pub_cont div h5::before{
+	content: "ㆍ";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#publish .pub_cont .pc2_tit p::before{
+	content: "ㆍ";
+	position: absolute;
+	top: 0;
+	left: -24px;
+	font-size: 24px;
+}
 #publish .pub_cont .moveto {
 	flex-direction:column;
 	text-align:center;
