@@ -23,7 +23,7 @@
 	transform:translateY(15px);
 }
 #nav .nav_menu li a {
-	-webkit-text-stroke:1px #e60000;
+	-webkit-text-stroke:1px #3dc1f5;
 	color:transparent;
 	font-size:24px;
 }
@@ -38,7 +38,7 @@
 	top:9px;
 	left:0;
 	width:0;
-	color:#e60000;
+	color:#3dc1f5;
 	white-space:nowrap;
 	transition:.5s;
 	overflow:hidden;
@@ -48,7 +48,7 @@
 	width:100%;
 }
 .pubup a:active::before,.desdw a:active::before {
-	text-shadow:0 1px 8px #e60000;
+	text-shadow:0 1px 8px #3dc1f5;
 	top:10px;
 	transition:.1s;
 }
