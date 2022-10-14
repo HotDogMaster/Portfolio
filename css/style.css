@@ -210,6 +210,9 @@
 	z-index: -1;
 	transition: transform .3s ease;
 }  
+#publish .pub_cont .moveto a:hover {
+	color:#fff;
+}
 #publish .pub_cont .moveto a:hover::before {
 	transform: scaleX(1);
 	transform-origin: bottom left;
