@@ -24,7 +24,7 @@
   transform: translateY(15px);
 }
 #nav .nav_menu li a {
-  -webkit-text-stroke: 1px rgba(24,70,180,0.6);
+  -webkit-text-stroke: 1px rgb(255, 111, 111);
   color: transparent;
   font-size: 24px;
 }
@@ -41,7 +41,7 @@
   top: 9px;
   left: 0;
   width: 0;
-  color: rgba(24,70,180,0.6);
+  color: rgb(255, 111, 111);
   white-space: nowrap;
   transition: 0.5s;
   overflow: hidden;
@@ -51,7 +51,7 @@
   width: 100%;
 }
 .pubup a:active::before, .desdw a:active::before {
-  text-shadow: 0 1px 8px rgba(24,70,180,0.6);
+  text-shadow: 0 1px 8px rgb(255, 111, 111);
   top: 10px;
   transition: 0.1s;
 }
