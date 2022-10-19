@@ -21,6 +21,6 @@ $(function(){
         $(".vid3").css('display','block')
       })
       $(".pack").click(function(){
-        window.open('https://hotdogmaster.github.io/packagep/', 'package', 'top=100, left=400, width=425, height=800, status=no, menubar=no, toolbar=no, resizable=no');
+        window.open('https://hotdogmaster.github.io/packagep/', 'package', 'top=100, left=400, width=425, height=425, status=no, menubar=no, toolbar=no, resizable=no');
       })
 })

@@ -13,6 +13,13 @@ $(function(){
 			opacity:0
 		});
 	});
+    $("#overlay::after").on("click",
+	function(){
+		$("#overlay").css({
+			visibility:"hidden",
+			opacity:0
+		});
+	});
     $(document).on("click",
 	function(e){
 		if( $("#overlay").is(e.target)) {

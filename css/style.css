@@ -47,10 +47,8 @@
   overflow: hidden;
   height: 32px;
 }
-.pubup a:hover::before, .desdw a:hover::before {
-  width: 100%;
-}
 .pubup a:active::before, .desdw a:active::before {
+  width: 100%;
   text-shadow: 0 1px 8px rgb(255, 111, 111);
   top: 10px;
   transition: 0.1s;
@@ -324,6 +322,18 @@
   overflow-y: auto;
   -ms-overflow-style: none;
 }
+#overlay::after, .banner_modals::after{
+  content:"";
+  background-image: url(../img/akar-icons_circle-x.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
 #overlay::-webkit-scrollbar {
   display: none;
 }
@@ -502,7 +512,18 @@
   .inner-header {
     height: 350px;
   }
-
+  #overlay::after, .banner_modals::after{
+    content:"";
+    background-image: url(../img/akar-icons_circle-x.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    cursor: pointer;
+  }
   .pubup a:active::before, .desdw a:active::before {
     top: 2px;
   }
